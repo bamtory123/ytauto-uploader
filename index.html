@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ytauto uploader</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d2433; --muted: #5b6475; --link: #2457c5; --line: #e3e6ec; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11151f; --fg: #e8ebf2; --muted: #9aa3b5; --link: #8fb0ff; --line: #262c3a; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>ytauto uploader</h1>
+  <p class="muted">A personal tool for one YouTube channel.</p>
+
+  <p>ytauto uploader is part of a private video production pipeline run by a single creator. It uploads videos that the
+  creator produced with that pipeline to the creator's own YouTube channel, using the YouTube Data API.</p>
+
+  <ul>
+    <li>It is not offered to other people and does not accept other users' accounts.</li>
+    <li>It requests only the YouTube permission needed to upload videos (<code>youtube.upload</code>).</li>
+    <li>Uploads are created as private by default; publishing is a separate, manual decision by the creator.</li>
+  </ul>
+
+  <p>Read the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>
+    Contact: <a href="https://github.com/bamtory123">github.com/bamtory123</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – ytauto uploader</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d2433; --muted: #5b6475; --link: #2457c5; --line: #e3e6ec; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11151f; --fg: #e8ebf2; --muted: #9aa3b5; --link: #8fb0ff; --line: #262c3a; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">ytauto uploader · Effective date: October 13, 2026</p>
+
+  <h2>Who this applies to</h2>
+  <p>ytauto uploader is a personal tool used by a single creator to upload their own videos to their own YouTube channel.
+  It is not offered to the public and does not collect data from anyone else.</p>
+
+  <h2>Google and YouTube data the app accesses</h2>
+  <p>With the creator's consent, the app requests one Google OAuth scope:
+  <code>https://www.googleapis.com/auth/youtube.upload</code>. It uses this access only to upload videos the creator
+  produced, and to set their metadata (title, description, privacy status) on the creator's own channel. It does not read
+  viewers' data, comments, analytics, or any other account information.</p>
+
+  <h2>How credentials are stored</h2>
+  <p>The OAuth client credentials and the refresh token are stored only as encrypted secrets in the creator's private
+  GitHub repository, where they are used by the creator's own automation to perform uploads. They are not written to
+  logs, not shown in build output, and not stored anywhere else.</p>
+
+  <h2>Sharing</h2>
+  <p>No data obtained through Google APIs is sold, shared with, or transferred to any third party, and it is not used for
+  advertising or for training AI models.</p>
+  <p>ytauto uploader's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Credentials are kept until the creator revokes them. Access can be revoked at any time on the Google Account
+  permissions page: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, after which
+  the stored refresh token stops working and is deleted from the repository secrets. Rendered video files used for an
+  upload are kept only as temporary build artifacts in the creator's private repository.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>This app uses YouTube API Services. By using it, you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If the data the app accesses changes (for example, adding caption uploads), this page will be updated before the
+  new access is requested.</p>
+
+  <h2>Contact</h2>
+  <p><a href="https://github.com/bamtory123">github.com/bamtory123</a></p>
+
+  <footer><a href="./">ytauto uploader home</a></footer>
+</main>
+</body>
+</html>
